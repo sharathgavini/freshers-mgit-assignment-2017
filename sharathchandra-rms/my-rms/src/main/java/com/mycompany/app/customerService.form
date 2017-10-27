@@ -24,12 +24,13 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="144" max="32767" attributes="0"/>
+              <EmptySpace pref="129" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="staffButton" max="32767" attributes="0"/>
-                  <Component id="customerButton" max="32767" attributes="0"/>
+                  <Component id="staffButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="customerButton" alignment="0" max="32767" attributes="0"/>
                   <Component id="itemButton" alignment="0" max="32767" attributes="0"/>
                   <Component id="billButton" alignment="0" max="32767" attributes="0"/>
+                  <Component id="staffButton1" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
           </Group>
@@ -38,31 +39,25 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="51" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="customerButton" min="-2" pref="48" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="billButton" min="-2" pref="48" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="itemButton" min="-2" pref="48" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="staffButton1" min="-2" pref="48" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="staffButton" min="-2" pref="48" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="staffButton">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="View Staff"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="staffButtonActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="customerButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Welcome a new Customer"/>
+        <Property name="text" type="java.lang.String" value="View Menu"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="customerButtonActionPerformed"/>
@@ -70,7 +65,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="billButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="View Bills"/>
+        <Property name="text" type="java.lang.String" value="Order Food"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="billButtonActionPerformed"/>
@@ -78,10 +73,26 @@
     </Component>
     <Component class="javax.swing.JButton" name="itemButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="View Items"/>
+        <Property name="text" type="java.lang.String" value="Request Bill"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="staffButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Feedback/Suggestions"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="staffButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="staffButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pay Bill"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="staffButton1ActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

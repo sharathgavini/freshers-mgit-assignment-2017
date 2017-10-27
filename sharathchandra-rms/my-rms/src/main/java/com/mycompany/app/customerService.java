@@ -5,18 +5,16 @@
  */
 package com.mycompany.app;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author shara
  */
-public class managerFrame extends javax.swing.JFrame {
+public class customerService extends javax.swing.JFrame {
 
     /**
-     * Creates new form managerFrame
+     * Creates new form customerService
      */
-    public managerFrame() {
+    public customerService() {
         initComponents();
     }
 
@@ -29,38 +27,46 @@ public class managerFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        staffButton = new javax.swing.JButton();
         customerButton = new javax.swing.JButton();
         billButton = new javax.swing.JButton();
         itemButton = new javax.swing.JButton();
+        staffButton = new javax.swing.JButton();
+        staffButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        staffButton.setText("View Staff");
-        staffButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                staffButtonActionPerformed(evt);
-            }
-        });
-
-        customerButton.setText("Welcome a new Customer");
+        customerButton.setText("View Menu");
         customerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 customerButtonActionPerformed(evt);
             }
         });
 
-        billButton.setText("View Bills");
+        billButton.setText("Order Food");
         billButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 billButtonActionPerformed(evt);
             }
         });
 
-        itemButton.setText("View Items");
+        itemButton.setText("Request Bill");
         itemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 itemButtonActionPerformed(evt);
+            }
+        });
+
+        staffButton.setText("Feedback/Suggestions");
+        staffButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                staffButtonActionPerformed(evt);
+            }
+        });
+
+        staffButton1.setText("Pay Bill");
+        staffButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                staffButton1ActionPerformed(evt);
             }
         });
 
@@ -69,37 +75,36 @@ public class managerFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(144, Short.MAX_VALUE)
+                .addContainerGap(129, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(staffButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(customerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(itemButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(billButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(billButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(staffButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(130, 130, 130))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(51, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(customerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(billButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(itemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(staffButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(staffButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(85, 85, 85))
+                .addGap(19, 19, 19))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void staffButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_staffButtonActionPerformed
-      JOptionPane.showMessageDialog(this, "This is a test");
-    }//GEN-LAST:event_staffButtonActionPerformed
-
     private void customerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerButtonActionPerformed
-        new customerFrame().setVisible(true);     
+        new customerFrame().setVisible(true);
     }//GEN-LAST:event_customerButtonActionPerformed
 
     private void billButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_billButtonActionPerformed
@@ -109,6 +114,14 @@ public class managerFrame extends javax.swing.JFrame {
     private void itemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_itemButtonActionPerformed
+
+    private void staffButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_staffButtonActionPerformed
+        JOptionPane.showMessageDialog(this, "This is a test");
+    }//GEN-LAST:event_staffButtonActionPerformed
+
+    private void staffButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_staffButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_staffButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,20 +140,20 @@ public class managerFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(managerFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(customerService.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(managerFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(customerService.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(managerFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(customerService.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(managerFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(customerService.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new managerFrame().setVisible(true);
+                new customerService().setVisible(true);
             }
         });
     }
@@ -150,5 +163,6 @@ public class managerFrame extends javax.swing.JFrame {
     private javax.swing.JButton customerButton;
     private javax.swing.JButton itemButton;
     private javax.swing.JButton staffButton;
+    private javax.swing.JButton staffButton1;
     // End of variables declaration//GEN-END:variables
 }
