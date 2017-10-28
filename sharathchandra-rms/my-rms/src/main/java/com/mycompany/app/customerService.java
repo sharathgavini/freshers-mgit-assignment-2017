@@ -34,6 +34,7 @@ public class customerService extends javax.swing.JFrame {
         itemButton = new javax.swing.JButton();
         staffButton = new javax.swing.JButton();
         staffButton1 = new javax.swing.JButton();
+        staffButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -58,7 +59,7 @@ public class customerService extends javax.swing.JFrame {
             }
         });
 
-        staffButton.setText("Feedback/Suggestions");
+        staffButton.setText("Leave");
         staffButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 staffButtonActionPerformed(evt);
@@ -69,6 +70,13 @@ public class customerService extends javax.swing.JFrame {
         staffButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 staffButton1ActionPerformed(evt);
+            }
+        });
+
+        staffButton2.setText("Feedback/Suggestions");
+        staffButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                staffButton2ActionPerformed(evt);
             }
         });
 
@@ -83,23 +91,26 @@ public class customerService extends javax.swing.JFrame {
                     .addComponent(customerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(itemButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(billButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(staffButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(staffButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(staffButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(130, 130, 130))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addComponent(customerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(billButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(itemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(staffButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(staffButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(staffButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
@@ -124,6 +135,10 @@ public class customerService extends javax.swing.JFrame {
     private void staffButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_staffButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_staffButton1ActionPerformed
+
+    private void staffButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_staffButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_staffButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -166,5 +181,6 @@ public class customerService extends javax.swing.JFrame {
     private javax.swing.JButton itemButton;
     private javax.swing.JButton staffButton;
     private javax.swing.JButton staffButton1;
+    private javax.swing.JButton staffButton2;
     // End of variables declaration//GEN-END:variables
 }
