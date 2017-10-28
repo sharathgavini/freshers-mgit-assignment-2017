@@ -3,7 +3,7 @@ Roti Naan
 100
 Fried rice
 5
-85
+81
 Nasi Goreng
 5
 38
@@ -15,10 +15,10 @@ Roti
 83
 Chom Chom
 3
-82
+70
 Roti naan
 9
-48
+45
 Roti Telur
 2.70
 27

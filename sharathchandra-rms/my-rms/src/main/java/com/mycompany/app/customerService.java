@@ -16,6 +16,9 @@ public class customerService extends javax.swing.JFrame {
     /**
      * Creates new form customerService
      */
+    public customerService(String name,int tableno,int members) {
+        initComponents();
+    }
     public customerService() {
         initComponents();
     }
@@ -117,7 +120,8 @@ public class customerService extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void customerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customerButtonActionPerformed
-        new customerFrame().setVisible(true);
+        new OrderManagement().setVisible(true);
+        setVisible(false);
     }//GEN-LAST:event_customerButtonActionPerformed
 
     private void billButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_billButtonActionPerformed
