@@ -21,7 +21,7 @@ public class customerFrame extends javax.swing.JFrame {
         addRadios();
     }
     public void addRadios(){
-        HashMap<Integer,Boolean> hm = TestMap.getMap();
+        HashMap<Integer,Boolean> hm = HostClass.getMap();
         wait.setVisible(false);
          if(hm.get(1)==false)
              t1.setVisible(false);

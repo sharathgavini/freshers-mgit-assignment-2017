@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Shahin
+ * @author shara
  */
 public class TotalPrice {
     private Scanner sc;
@@ -22,9 +22,7 @@ public class TotalPrice {
     private String price;
     private String quantity;
     private StringBuilder fullnames;
-    private double dPrice;
-    private int dQuantity;
-    private double multi;
+  
     private PrintWriter pw;
     public TotalPrice()
     {
@@ -64,8 +62,7 @@ public class TotalPrice {
                 
                 name = scan.nextLine();
                 System.out.println(name);
-                // price = scan.nextLine();
-                
+              
                 
                 quantity=scan.nextLine();
                // dQuantity=Integer.decode(quantity);

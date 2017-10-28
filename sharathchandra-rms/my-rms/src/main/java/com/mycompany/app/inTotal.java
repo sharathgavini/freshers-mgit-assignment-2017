@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Shahin
+ * @author shara
  */
 public class inTotal {
     public Scanner scan;
@@ -25,7 +25,7 @@ public class inTotal {
             {
                 
                 
-                scan.nextLine();
+               scan.nextLine();
                scan.nextLine();
                price = scan.nextLine();
                total+=Double.valueOf(price);

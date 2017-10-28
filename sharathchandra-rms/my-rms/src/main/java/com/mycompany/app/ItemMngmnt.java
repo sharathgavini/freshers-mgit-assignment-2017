@@ -9,7 +9,7 @@ package com.mycompany.app;
 
 /**
  *
- * @author Shahin
+ * @author shara
  */
 public class ItemMngmnt extends javax.swing.JFrame {
 

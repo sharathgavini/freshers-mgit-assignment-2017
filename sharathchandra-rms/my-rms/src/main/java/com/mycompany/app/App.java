@@ -15,7 +15,7 @@ public class App
        // if(args.length==2)
        // {
         //    if(args[0].equals("sharath")&&args[1].equals("1234"))
-            new managerFrame().setVisible(true);
+            new ManagerFrame().setVisible(true);
          //   else
          //       System.out.println("Invalid username and password");
        // }

@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Shahin
+ * @author shara
  */
 public class ModifyItem extends javax.swing.JFrame {
     private MdfItem m;

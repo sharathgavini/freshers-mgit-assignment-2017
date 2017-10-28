@@ -11,11 +11,11 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Shahin
+ * @author shara
  */
 public class BillManagement extends javax.swing.JFrame {
     private inTotal it ;
-   private OrdrManagement  o;
+   private OrderManagement  o;
    private TotalPrice t;
     private String name;
     private String quantity ;
@@ -56,7 +56,7 @@ public class BillManagement extends javax.swing.JFrame {
     }
      private void performFileRelatedTask()
     {
-        o = new OrdrManagement();
+        o = new OrderManagement();
       //  RestaurentManagement r= new RestaurentManagement();
        // r.setVisible(true);
        // this.dispose();
@@ -180,11 +180,8 @@ public class BillManagement extends javax.swing.JFrame {
 
     private void paymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paymentActionPerformed
         // TODO add your handling code here:
-        o.delete();
+        //o.delete();
         t = new TotalPrice();
-        
-        RestaurentManagement rm = new RestaurentManagement();
-        rm.setVisible(true);
         this.dispose();
         try {
             PrintWriter pw1 = new PrintWriter(new FileOutputStream("temp.txt"));
@@ -194,7 +191,7 @@ public class BillManagement extends javax.swing.JFrame {
             
             
             
-            pw1.close();;
+            pw1.close();
             pw2.close();
             pw3.close();
         } catch (Exception e) {

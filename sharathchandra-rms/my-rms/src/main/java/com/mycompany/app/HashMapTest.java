@@ -17,7 +17,7 @@ public class HashMapTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        HashMap<Integer,Boolean> hm = TestMap.getMap();
+        HashMap<Integer,Boolean> hm = HostClass.getMap();
         System.out.println(hm);
     }
     

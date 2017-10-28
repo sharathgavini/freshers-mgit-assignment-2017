@@ -11,9 +11,9 @@ import java.util.Scanner;
 
 /**
  *
- * @author Shahin
+ * @author shara
  */
-class ReciptFile {
+class ReceiptFile {
     private Scanner sc;
     private Scanner scan;
     private String name;
@@ -25,7 +25,7 @@ class ReciptFile {
     private double multi;
     private double sum=0;
     private PrintWriter pw;
-    public ReciptFile()
+    public ReceiptFile()
     {
         fullnames = new StringBuilder();
         openFile();

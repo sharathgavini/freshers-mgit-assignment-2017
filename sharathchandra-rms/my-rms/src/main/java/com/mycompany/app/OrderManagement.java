@@ -14,11 +14,11 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Shahin
+ * @author shara
  */
 public class OrderManagement extends javax.swing.JFrame {
      private OrdrManagement o;
-     private ReciptFile r;
+     private ReceiptFile r;
     private String srcName;
     private String modName;
     private String modPrice;
@@ -48,7 +48,6 @@ public class OrderManagement extends javax.swing.JFrame {
         text = new javax.swing.JTextArea();
         jPanel1 = new javax.swing.JPanel();
         backButton = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         modifyButton = new javax.swing.JButton();
         view = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
@@ -58,10 +57,9 @@ public class OrderManagement extends javax.swing.JFrame {
         checkButton = new javax.swing.JButton();
         modText = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
-        reciptArea = new javax.swing.JTextArea();
+        receiptArea = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         totalPriceField = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -79,20 +77,12 @@ public class OrderManagement extends javax.swing.JFrame {
         text.setRows(5);
         jScrollPane1.setViewportView(text);
 
-        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         backButton.setText("Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backButtonActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("Bill");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
             }
         });
 
@@ -110,10 +100,9 @@ public class OrderManagement extends javax.swing.JFrame {
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(102, 204, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel1.setText("Which ID Item You want?");
+        jLabel1.setText("Which Item Do You want?(Enter ID)");
 
         jLabel4.setText("Enter  Quantity");
 
@@ -169,11 +158,9 @@ public class OrderManagement extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(view)
-                .addGap(18, 18, 18)
+                .addGap(48, 48, 48)
                 .addComponent(modifyButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(54, 54, 54)
                 .addComponent(backButton)
                 .addGap(108, 108, 108))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -190,21 +177,19 @@ public class OrderManagement extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(view)
                     .addComponent(modifyButton)
-                    .addComponent(jButton1)
                     .addComponent(backButton))
                 .addGap(23, 23, 23))
         );
 
-        reciptArea.setBackground(new java.awt.Color(255, 153, 102));
-        reciptArea.setColumns(20);
-        reciptArea.setRows(5);
-        jScrollPane2.setViewportView(reciptArea);
+        receiptArea.setEditable(false);
+        receiptArea.setBackground(new java.awt.Color(240, 240, 240));
+        receiptArea.setColumns(20);
+        receiptArea.setRows(5);
+        jScrollPane2.setViewportView(receiptArea);
 
         jLabel2.setText("Name");
 
         jLabel3.setText("Price");
-
-        jLabel5.setText("Quantity");
 
         totalPriceField.setEditable(false);
         totalPriceField.setBackground(new java.awt.Color(255, 204, 51));
@@ -231,9 +216,7 @@ public class OrderManagement extends javax.swing.JFrame {
                                 .addGap(92, 92, 92)
                                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(39, 39, 39)
-                                .addComponent(jLabel3)
-                                .addGap(48, 48, 48)
-                                .addComponent(jLabel5))
+                                .addComponent(jLabel3))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -257,7 +240,6 @@ public class OrderManagement extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
                             .addComponent(jLabel3)
-                            .addComponent(jLabel5)
                             .addComponent(jLabel6))
                         .addGap(6, 6, 6)
                         .addComponent(jScrollPane1))
@@ -283,7 +265,7 @@ public class OrderManagement extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -319,21 +301,11 @@ public class OrderManagement extends javax.swing.JFrame {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
-        RestaurentManagement im = new RestaurentManagement();
-        im.setVisible(true);
+    
         this.setVisible(false);
     }//GEN-LAST:event_backButtonActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-            // TODO add your handling code here:
-        
-        b= new BillManagement();
-        b.setVisible(true);
-          this.dispose();
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
     
-     public void reciptArea(){
+     public void receiptArea(){
          String n,q;
        try {
            Scanner sc= new Scanner(new FileInputStream("temp.txt"));
@@ -343,7 +315,7 @@ public class OrderManagement extends javax.swing.JFrame {
                // setSrchName(n);
                // setQuantity(quantity);
                 
-              reciptArea.setText(n+"\t"+ q+"\n");
+              receiptArea.setText(n+"\t"+ q+"\n");
                 
                 
             
@@ -374,8 +346,8 @@ public class OrderManagement extends javax.swing.JFrame {
             System.out.println("will be modified "+pass);
             
            
-             r = new ReciptFile();
-            reciptArea.setText(r.getFullNames().toString());
+             r = new ReceiptFile();
+            receiptArea.setText(r.getFullNames().toString());
             totalPriceField.setText("Total price : "+r.getSum().toString());
             try {
                pw = new PrintWriter(new FileOutputStream("order.txt",true));
@@ -433,13 +405,11 @@ public class OrderManagement extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backButton;
     private javax.swing.JButton checkButton;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -451,7 +421,7 @@ public class OrderManagement extends javax.swing.JFrame {
     private javax.swing.JTextField mQuantity;
     private javax.swing.JTextField modText;
     private javax.swing.JButton modifyButton;
-    private javax.swing.JTextArea reciptArea;
+    private javax.swing.JTextArea receiptArea;
     private javax.swing.JTextArea text;
     private javax.swing.JTextField totalPriceField;
     private javax.swing.JButton view;
@@ -703,7 +673,7 @@ private int num=1;
     
     }
     
-    public void readRecipt(){
+    public void readReciept(){
         
         try{
             Scanner sc = new Scanner(new FileInputStream("temp.txt"));
