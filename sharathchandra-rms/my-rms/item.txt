@@ -1,0 +1,27 @@
+Roti Naan
+150
+100
+Fried rice
+5
+85
+Nasi Goreng
+5
+38
+Roso Malay
+6
+95
+Roti
+2
+83
+Chom Chom
+3
+82
+Roti naan
+9
+48
+Roti Telur
+2.70
+27
+Banana
+10
+35
