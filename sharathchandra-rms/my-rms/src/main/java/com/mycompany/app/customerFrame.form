@@ -164,6 +164,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Table 1"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="t1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="t2">
           <Properties>

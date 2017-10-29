@@ -41,7 +41,6 @@ public class InsertItem extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         backButton = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 153, 204));
 
         jLabel1.setText("Item Name");

@@ -81,7 +81,6 @@ public class BillManagement extends javax.swing.JFrame {
         payment = new javax.swing.JButton();
         printB = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 51, 255));
 
         jPanel1.setBackground(new java.awt.Color(0, 153, 255));
@@ -173,9 +172,7 @@ public class BillManagement extends javax.swing.JFrame {
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
         
-        OrderManagement om = new OrderManagement();
-        om.setVisible(true);
-        this.dispose();
+      this.dispose();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void paymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_paymentActionPerformed
@@ -201,7 +198,9 @@ public class BillManagement extends javax.swing.JFrame {
     private void printBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_printBActionPerformed
         // TODO add your handling code here:
         try {
-            
+            /**
+            * Prints the summary of the bill
+            **/
             boolean complete = text.print();
             if(complete){
             

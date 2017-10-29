@@ -77,6 +77,11 @@ public class customerFrame extends javax.swing.JFrame {
 
         buttonGroup1.add(t1);
         t1.setText("Table 1");
+        t1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                t1ActionPerformed(evt);
+            }
+        });
 
         buttonGroup1.add(t2);
         t2.setText("Table 2");
@@ -221,6 +226,10 @@ public class customerFrame extends javax.swing.JFrame {
         c.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_chooseActionPerformed
+
+    private void t1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_t1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_t1ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -37,12 +37,16 @@ public class BillScan {
     }
 
     private void readFile() {
+        /**
+         * Reads the file contents and appends it to the StringBuilder
+         */
         try {
             while (scan.hasNextLine()) {
                 amount =scan.nextLine();
                 total+=Double.parseDouble(amount);
                 names.append(amount+"\n");
             }
+ 
         } catch (Exception e) {
             System.out.println(e);
         }
